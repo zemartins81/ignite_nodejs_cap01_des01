@@ -4,7 +4,7 @@ const { validate } = require('uuid');
 const app = require('../');
 
 describe('Users', () => {
-  it('should be able to create a new user', async () => {
+  it  ('should be able to create a new user', async () => {
     const response = await request(app)
       .post('/users')
       .send({
